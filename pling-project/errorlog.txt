@@ -472,3 +472,195 @@ Traceback (most recent call last):
   File "c:/Users/g-oft/OneDrive/Dokumenter/DG/dg-prosjekt/pling-project/main.py", line 51, in main
     meny.get_name()
 TypeError: get_name() takes no arguments (1 given)
+ERROR:root:
+Sat Mar  6 20:12:49 2021
+Traceback (most recent call last):
+  File "main.py", line 67, in <module>
+    main()
+  File "main.py", line 48, in main
+    meny = plingMeny(verbose=VERBOSE, meny_fin=meny_fin)
+  File "/home/dgmusic/dg_pling/pling-project/plingMeny.py", line 26, in __init__
+    self.master = Tkinter.Tk()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 1828, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+TclError: couldn't connect to display ":0"
+ERROR:root:
+Sat Mar  6 20:16:45 2021
+Traceback (most recent call last):
+  File "main.py", line 67, in <module>
+    main()
+  File "main.py", line 48, in main
+    meny = plingMeny(verbose=VERBOSE, meny_fin=meny_fin)
+  File "/home/dgmusic/dg_pling/pling-project/plingMeny.py", line 26, in __init__
+    self.master = Tkinter.Tk()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 1828, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+TclError: couldn't connect to display ":0"
+ERROR:root:
+Sat Mar  6 22:15:08 2021
+Traceback (most recent call last):
+  File "main.py", line 66, in <module>
+    main()
+  File "main.py", line 47, in main
+    meny = plingMeny(verbose=VERBOSE, meny_fin=meny_fin)
+  File "/home/dgmusic/dg_pling/pling-project/plingMeny.py", line 26, in __init__
+    self.master = Tkinter.Tk()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 1828, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+TclError: couldn't connect to display ":0"
+ERROR:root:
+Sat Mar  6 22:15:32 2021
+Traceback (most recent call last):
+  File "main.py", line 66, in <module>
+    main()
+  File "main.py", line 47, in main
+    meny = plingMeny(verbose=VERBOSE, meny_fin=meny_fin)
+  File "/home/dgmusic/dg_pling/pling-project/plingMeny.py", line 26, in __init__
+    self.master = Tkinter.Tk()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 1828, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+TclError: couldn't connect to display ":0"
+ERROR:root:
+Sat Mar  6 22:15:43 2021
+Traceback (most recent call last):
+  File "main.py", line 66, in <module>
+    main()
+  File "main.py", line 47, in main
+    meny = plingMeny(verbose=VERBOSE, meny_fin=meny_fin)
+  File "/home/dgmusic/dg_pling/pling-project/plingMeny.py", line 26, in __init__
+    self.master = Tkinter.Tk()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 1828, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+TclError: couldn't connect to display ":0"
+ERROR:root:
+Sun Mar  7 13:33:19 2021
+Traceback (most recent call last):
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 66, in <module>
+    main()
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 47, in main
+    meny = plingMeny(verbose=VERBOSE, meny_fin=meny_fin)
+  File "/home/dgmusic/dg_pling/pling-project/plingMeny.py", line 26, in __init__
+    self.master = Tkinter.Tk()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 1828, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+TclError: no display name and no $DISPLAY environment variable
+ERROR:root:
+Sun Mar  7 14:16:46 2021
+Traceback (most recent call last):
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 66, in <module>
+    main()
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 47, in main
+    meny = plingMeny(verbose=VERBOSE, meny_fin=meny_fin)
+  File "/home/dgmusic/dg_pling/pling-project/plingMeny.py", line 26, in __init__
+    self.master = Tkinter.Tk()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 1828, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+TclError: no display name and no $DISPLAY environment variable
+ERROR:root:
+Sun Mar  7 14:31:15 2021
+Traceback (most recent call last):
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 66, in <module>
+    main()
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 47, in main
+    meny = plingMeny(verbose=VERBOSE, meny_fin=meny_fin)
+  File "/home/dgmusic/dg_pling/pling-project/plingMeny.py", line 26, in __init__
+    self.master = Tkinter.Tk()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 1828, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+TclError: no display name and no $DISPLAY environment variable
+ERROR:root:
+Sun Mar  7 14:46:45 2021
+Traceback (most recent call last):
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 66, in <module>
+    main()
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 47, in main
+    meny = plingMeny(verbose=VERBOSE, meny_fin=meny_fin)
+  File "/home/dgmusic/dg_pling/pling-project/plingMeny.py", line 26, in __init__
+    self.master = Tkinter.Tk()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 1828, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+TclError: no display name and no $DISPLAY environment variable
+ERROR:root:
+Sun Mar  7 14:53:15 2021
+Traceback (most recent call last):
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 66, in <module>
+    main()
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 47, in main
+    meny = plingMeny(verbose=VERBOSE, meny_fin=meny_fin)
+  File "/home/dgmusic/dg_pling/pling-project/plingMeny.py", line 26, in __init__
+    self.master = Tkinter.Tk()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 1828, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+TclError: no display name and no $DISPLAY environment variable
+ERROR:root:
+Sun Mar  7 14:53:19 2021
+Traceback (most recent call last):
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 66, in <module>
+    main()
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 47, in main
+    meny = plingMeny(verbose=VERBOSE, meny_fin=meny_fin)
+  File "/home/dgmusic/dg_pling/pling-project/plingMeny.py", line 26, in __init__
+    self.master = Tkinter.Tk()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 1828, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+TclError: no display name and no $DISPLAY environment variable
+ERROR:root:
+Sun Mar  7 14:59:14 2021
+Traceback (most recent call last):
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 66, in <module>
+    main()
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 47, in main
+    meny = plingMeny(verbose=VERBOSE, meny_fin=meny_fin)
+  File "/home/dgmusic/dg_pling/pling-project/plingMeny.py", line 26, in __init__
+    self.master = Tkinter.Tk()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 1828, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+TclError: no display name and no $DISPLAY environment variable
+ERROR:root:
+Sun Mar  7 14:59:18 2021
+Traceback (most recent call last):
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 66, in <module>
+    main()
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 47, in main
+    meny = plingMeny(verbose=VERBOSE, meny_fin=meny_fin)
+  File "/home/dgmusic/dg_pling/pling-project/plingMeny.py", line 26, in __init__
+    self.master = Tkinter.Tk()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 1828, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+TclError: no display name and no $DISPLAY environment variable
+ERROR:root:
+Sun Mar  7 15:05:20 2021
+Traceback (most recent call last):
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 66, in <module>
+    main()
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 47, in main
+    meny = plingMeny(verbose=VERBOSE, meny_fin=meny_fin)
+  File "/home/dgmusic/dg_pling/pling-project/plingMeny.py", line 26, in __init__
+    self.master = Tkinter.Tk()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 1828, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+TclError: no display name and no $DISPLAY environment variable
+ERROR:root:
+Sun Mar  7 15:15:39 2021
+Traceback (most recent call last):
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 66, in <module>
+    main()
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 47, in main
+    meny = plingMeny(verbose=VERBOSE, meny_fin=meny_fin)
+  File "/home/dgmusic/dg_pling/pling-project/plingMeny.py", line 26, in __init__
+    self.master = Tkinter.Tk()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 1828, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+TclError: no display name and no $DISPLAY environment variable
+ERROR:root:
+Sun Mar  7 15:15:39 2021
+Traceback (most recent call last):
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 66, in <module>
+    main()
+  File "/home/dgmusic/dg_pling/pling-project/main.py", line 47, in main
+    meny = plingMeny(verbose=VERBOSE, meny_fin=meny_fin)
+  File "/home/dgmusic/dg_pling/pling-project/plingMeny.py", line 26, in __init__
+    self.master = Tkinter.Tk()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 1828, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+TclError: no display name and no $DISPLAY environment variable

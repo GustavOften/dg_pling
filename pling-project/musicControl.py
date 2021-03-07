@@ -22,9 +22,9 @@ class musicControl:
         
   def playSong(self):
     if globals.pling_type == "dame":
-      self.player = vlc.MediaPlayer(os.path.join(self.script_dir,"files\dame.mp3"))
+      self.player = vlc.MediaPlayer(os.path.join(self.script_dir,"files/dame.mp3"))
     elif globals.pling_type == "fernet":
-      self.player = vlc.MediaPlayer(os.path.join(self.script_dir,"files\\fernet.mp3"))
+      self.player = vlc.MediaPlayer(os.path.join(self.script_dir,"files/fernet.mp3"))
     self.player.play()
     time.sleep(0.5)
     self.findVlcSinkInput()

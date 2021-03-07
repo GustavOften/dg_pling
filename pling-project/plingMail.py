@@ -90,38 +90,70 @@ class plingMail(Thread):
     subject  = "PLING!"
     author = formataddr((str(Header(u'DG-Pling', 'utf-8')), self.from_addr))
     quote = self.getPlingQuote()
-    html = """\
-    <html>
-      <head></head>
-      <body>
-           <font size="6"> 
-            """\
-             +globals.plinger_name+ \
-            """\
-            plinger på DG!!!<br>
-           </font>
-        <picture> 
-          <img src="cid:image1">
-        </picture>
-        <p><br>
-        Gammelt pling ordtak:
-        </p>
-        <i>
-        """ \
-        +quote+ \
-        """\
-        </i>
-        <p><br>
-           Hilsen <br>
-           DGs Plingkomite<br>
-        </p>
-      </body>
-    </html>
-    """
-    
+    if(globals.pling_type == 'dame'):
+	    html = """\
+	    <html>
+	      <head></head>
+	      <body>
+		   <font size="6"> 
+		    """\
+		     +globals.plinger_name+ \
+		    """\
+		    plinger på DG!!!<br>
+		   </font>
+		<picture> 
+		  <img src="cid:image1">
+		</picture>
+		<p><br>
+		Gammelt pling ordtak:
+		</p>
+		<i>
+		""" \
+		+quote+ \
+		"""\
+		</i>
+		<p><br>
+		   Hilsen <br>
+		   DGs Plingkomite<br>
+		</p>
+	      </body>
+	    </html>
+	    """
+    if(globals.pling_type == 'fernet'):
+    	    html = """\
+	    <html>
+	      <head></head>
+	      <body>
+		   <font size="6"> 
+		    """\
+		     +globals.plinger_name+ \
+		    """\
+		    plinger Fernet på DG!!!<br>
+		   </font>
+		<picture> 
+		  <img src="cid:image1">
+		</picture>
+		<p><br>
+		Gammelt pling ordtak:
+		</p>
+		<i>
+		""" \
+		+quote+ \
+		"""\
+		</i>
+		<p><br>
+		   Hilsen <br>
+		   DGs Plingkomite<br>
+		</p>
+	      </body>
+	    </html>
+	    """
     
     #Add picture
-    pic = os.path.join(self.script_dir, 'files/halvdan.jpg')
+    if(globals.pling_type == 'dame'):
+    	pic = os.path.join(self.script_dir, 'files/halvdan.jpg')
+    if(globals.pling_type == 'fernet'):
+	pic = os.path.join(self.script_dir, 'files/fernet_pic.jpg')
     fp = open(pic, 'rb')
     msgImage = MIMEImage(fp.read())
     fp.close()

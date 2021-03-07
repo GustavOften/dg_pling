@@ -30,14 +30,13 @@ def main():
     if sys.argv[-1] == 'test':
       mcu = mbedBlackBox(eventPlingList)
     else:
-      #mcu = mbedBlackBox(eventPlingList)
       mcu = mbed(eventPlingList, verbose=VERBOSE)
     mcu.start()
     globals.initialize()
     if INCLUDE_MAIL:  
       #Instantiate Pling Mail object and start thread
-      USER = "testdgpling@gmail.com"
-      PW = "!dettepassordeterfantastisk"
+      USER = "dgplingpling@gmail.com"
+      PW = "chUswa+H7Mu!"
       FROM_ADDR = "DG-PLING"
       TO_ADDR = "g.often94@gmail.com"
       plingMailObj = plingMail(user=USER, pw=PW, from_addr=FROM_ADDR, to_addr=TO_ADDR, plingEvent=eventPlingList[1], plingFinishedEvent=plingFinishedEvent,meny_fin=meny_fin, verbose=VERBOSE)

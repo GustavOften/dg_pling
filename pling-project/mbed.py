@@ -3,6 +3,7 @@
 import serial
 import time
 import sys
+import globals
 from threading import Thread
 from threading import Event
 
@@ -24,7 +25,8 @@ class mbed(Thread):
                 self.s = serial.Serial(port=serdev,timeout=None)
                 if(self.verbose): print "Connected to MCU!"
                 break
-            except:
+            except Exception as e: 
+		print(e)
                 if(self.verbose): print("Error when connecting to MCU!! \nTrying to reconnect in 10s")
                 time.sleep(10)
             
@@ -41,11 +43,20 @@ class mbed(Thread):
                         mld += self.s.read()        
                     if(mld[0:5] == "PLING"):  
                         if(self.verbose): print "PLING"
+			globals.pling_type = "dame"
                         for event in self.events:        
                           event.set()
                         time.sleep(5)
                         if self.s.inWaiting():
-                          self.s.flushInput()     
+                          self.s.flushInput()
+		    if(mld[0:6] == "FERNET"):
+     			if(self.verbose): print "FERNET"
+			globals.pling_type = "fernet"
+                        for event in self.events:        
+                          event.set()
+                        time.sleep(5)
+                        if self.s.inWaiting():
+                          self.s.flushInput()
                     mld = ''   
             except KeyboardInterrupt:
                 self.s.close()

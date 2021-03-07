@@ -13,8 +13,8 @@ from watchdog.events import FileSystemEventHandler
 class plingOmeter:
   def __init__(self):
     self.root = Tkinter.Tk()
-    self.script_dir = "C:\Users\g-oft\OneDrive\Dokumenter\DG\dg-prosjekt\plingOmeter-project" #<-- absolute dir the script is in
-    self.fileName = '..\pling-project\plingStats.csv'
+    self.script_dir = "/home/dgmusic/dg_pling/plingOmeter-project" #<-- absolute dir the script is in
+    self.fileName = '../pling-project/plingStats.csv'
     self.abs_file_path = os.path.join(self.script_dir, self.fileName)
     self.totalNmbPlings = 0
     self.masterFrame = Tkinter.Frame(self.root,bg='green')
@@ -25,7 +25,7 @@ class plingOmeter:
     
     #Title and icon 
     self.root.wm_title("Pling-O-Meter")
-    icon = Tkinter.PhotoImage(file=os.path.join(self.script_dir,'files\iconOmeter.pgm'))
+    icon = Tkinter.PhotoImage(file=os.path.join(self.script_dir,'files/iconOmeter.pgm'))
     self.root.tk.call('wm', 'iconphoto', self.root._w, icon)
       
     # get screen width and height    
@@ -119,7 +119,7 @@ def main(observer):
   print(os.path.dirname(__file__))
   
   #Get absolute paths to directories
-  script_dir = "C:\Users\g-oft\OneDrive\Dokumenter\DG\dg-prosjekt\plingOmeter-project" #<-- absolute dir the script is in
+  script_dir = "/home/dgmusic/dg_pling/plingOmeter-project" #<-- absolute dir the script is in
   rel_path = '../pling-project'
   abs_dir_path = os.path.join(script_dir, rel_path)
   
